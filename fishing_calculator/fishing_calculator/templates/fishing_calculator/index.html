@@ -1,0 +1,13 @@
+{% extends "fishing_calculator/layout.html" %}
+
+{% block body %}
+    <div id="block-1">
+        <p class="description-title">Current Location:</p>
+        <form class="intake-form" action="{% url 'calculator:calculate' %}" method="POST">
+            {% csrf_token %}
+            {{ form }}
+            <input type="submit" name="submit">
+            
+        </form>
+    </div>
+{% endblock %}

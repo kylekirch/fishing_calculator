@@ -1,0 +1,11 @@
+{% extends "fishing_calculator/layout.html" %}
+
+{% block body %}
+    <div id="block-1">
+        <h1>For Location: Latitude {{ latitude }}, Longitude {{ longitude }}</h1>
+        {{ graph|safe }}
+        <a href="{% url 'calculator:index' %}">
+            <button>Back</button>
+        </a>
+    </div>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'calculator/styles.css' %}" rel="stylesheet">
+    <title>Greet</title>
+</head>
+
+<header class="banner">
+    <h1>Welcome to The Fishing Calculator!</h1> 
+</header>
+
+<body>
+    {% block body %}
+    {% endblock %}
+</body>
+
+</html>
